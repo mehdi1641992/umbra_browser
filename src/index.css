@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* Umbra Theme & Find In Page Styles */
+.theme-light {
+  color-scheme: light;
+}
+
+.theme-light.bg-\[\#000000\],
+.theme-light .bg-\[\#000000\] {
+  background-color: #ffffff !important;
+}
+
+.theme-light .bg-\[\#14213d\] {
+  background-color: #f1f3f5 !important;
+}
+
+.theme-light .bg-\[\#14213d\]\/80 {
+  background-color: rgba(241, 243, 245, 0.8) !important;
+}
+
+.theme-light .bg-\[\#14213d\]\/60 {
+  background-color: rgba(241, 243, 245, 0.6) !important;
+}
+
+.theme-light.text-\[\#ffffff\],
+.theme-light .text-\[\#ffffff\] {
+  color: #14213d !important;
+}
+
+.theme-light .text-\[\#e5e5e5\] {
+  color: #495057 !important;
+}
+
+.theme-light .border-\[\#14213d\] {
+  border-color: #dee2e6 !important;
+}
+
+.theme-light .border-\[\#000000\] {
+  border-color: #e9ecef !important;
+}
+
+.theme-light .hover\:bg-\[\#14213d\]:hover {
+  background-color: #e2e8f0 !important;
+}
+
+.theme-light .hover\:bg-\[\#000000\]:hover {
+  background-color: #f8f9fa !important;
+}
+
+.theme-light .hover\:text-\[\#ffffff\]:hover {
+  color: #000000 !important;
+}
+
+/* Ensure buttons and badges with amber accent maintain black text */
+.theme-light .bg-\[\#fca311\],
+.theme-light button.bg-\[\#fca311\],
+.theme-light .bg-\[\#fca311\] span,
+.theme-light .bg-\[\#fca311\] strong {
+  background-color: #fca311 !important;
+  color: #000000 !important;
+}
+
+/* Active tab highlight in light mode */
+.theme-light .border-t-2.border-\[\#fca311\] {
+  background-color: #ffffff !important;
+  color: #14213d !important;
+}
+
+/* Find in Page Highlights */
+mark.umbra-find-match {
+  background-color: rgba(252, 163, 17, 0.45);
+  color: inherit;
+  padding: 1px 3px;
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out;
+}
+
+mark.umbra-find-match.active-match {
+  background-color: #fca311 !important;
+  color: #000000 !important;
+  font-weight: 700;
+  box-shadow: 0 0 0 2px #ffffff, 0 2px 8px rgba(252, 163, 17, 0.6);
+  transform: scale(1.05);
+  display: inline-block;
+}

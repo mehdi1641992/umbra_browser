@@ -1,0 +1,6 @@
+{
+  "name": "Umbra Browser",
+  "description": "A privacy-first browser with advanced ad-blocking, tracker detection, cross-site cookie protection, IDM-style media sniffer, tab grouping, and Umbra AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
